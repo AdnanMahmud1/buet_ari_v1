@@ -22,6 +22,10 @@ var app = angular.module('wmApp', ['ngRoute',
             $locationProvider.hashPrefix('');
         }
     ]);
+
+
+
+
 angular.module('wmApp').controller('menuController', [
     '$scope', '$routeParams', '$location', function ($scope, $routeParams, $location) {
         var errorFunction = function (error) {
