@@ -17,6 +17,11 @@ var app = angular.module('wmApp', ['ngRoute',
                         templateUrl: './AngularApp/views/aboutUs.tpl.html',
                         controller: 'mainController'
                     })
+                .when('/notices',
+                    {
+                        templateUrl: './AngularApp/views/notices.tpl.html',
+                        controller: 'mainController'
+                    })
                
                 .otherwise({ redirectTo: '/' });
             $locationProvider.hashPrefix('');
